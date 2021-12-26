@@ -1,0 +1,200 @@
+actually integer and string comparison this condition we have use single and double collans 
+#! /bin/bash
+
+count=10
+
+if [ $count -eq 9 ]
+then 
+    echo "condition is true"
+  fi  
+  
+ rake@rake-VirtualBox:~/Desktop$ ./hello.sh
+condition is true
+
+
+#! /bin/bash
+
+count=10
+
+if [ $count -ne 9 ]
+then 
+    echo "condition is true"
+  fi  
+  
+  rake@rake-VirtualBox:~/Desktop$ ./hello.sh
+condition is true
+
+
+#! /bin/bash
+
+count=10
+
+if [ $count -gt 9 ]
+then 
+    echo "condition is true"
+  fi  
+  
+  rake@rake-VirtualBox:~/Desktop$ ./hello.sh
+condition is true
+
+
+! /bin/bash
+
+count=10
+
+if [ $count > 9 ]
+then 
+    echo "condition is true"
+  fi  
+  
+  rake@rake-VirtualBox:~/Desktop$ ./hello.sh
+condition is true
+ 
+ 
+ same with double collan
+ #! /bin/bash
+
+count=10
+
+if (($count > 9))
+then 
+    echo "condition is true"
+  fi  
+  
+  rake@rake-VirtualBox:~/Desktop$ ./hello.sh
+condition is true
+
+
+#! /bin/bash
+
+count=10
+
+if (($count >= 9))
+then 
+    echo "condition is true"
+  fi 
+  
+  rake@rake-VirtualBox:~/Desktop$ ./hello.sh
+condition is true
+  
+  
+  now comparing strings
+  #! /bin/bash
+
+word=abc
+
+if [ $word == "abc" ]
+then 
+    echo "condition is true"
+  fi  
+  
+  rake@rake-VirtualBox:~/Desktop$ ./hello.sh
+condition is true
+
+
+#! /bin/bash
+
+word=abc
+
+if [ $word = "abc" ]
+then 
+    echo "condition is true"
+  fi  
+  
+  rake@rake-VirtualBox:~/Desktop$ ./hello.sh
+condition is true
+
+
+#! /bin/bash
+
+word=abc
+
+if [ $word  != "abccc" ]
+then 
+    echo "condition is true"
+  fi  
+  
+  ake@rake-VirtualBox:~/Desktop$ ./hello.sh
+condition is true
+
+#! /bin/bash
+
+word=a
+
+if [ $word  < "b" ]
+then 
+    echo "condition is true"
+  fi  
+  
+  rake@rake-VirtualBox:~/Desktop$ ./hello.sh
+./hello.sh: line 5: b: No such file or directory
+
+if have to use double conditin to satisfy the condition
+#! /bin/bash
+
+word=a
+
+if [[ $word  < "b" ]]
+then 
+    echo "condition is true"
+  fi  
+  
+  rake@rake-VirtualBox:~/Desktop$ ./hello.sh
+condition is true
+
+
+now its else condition
+#! /bin/bash
+
+word=a
+
+if [[ $word  == "b" ]]
+then 
+    echo "condition is true"
+  else
+  echo "condition is false"
+  fi 
+  
+  rake@rake-VirtualBox:~/Desktop$ ./hello.sh
+condition is false
+
+
+now its if else condition
+#! /bin/bash
+
+word=a
+
+if [[ $word  == "b" ]]
+then 
+    echo "condition is true"
+ elif [[$word == "a" ]] 
+ then
+ echo "condition is true" 
+  else
+  echo "condition is false"
+  fi 
+  
+  rake@rake-VirtualBox:~/Desktop$ ./hello.sh
+./hello.sh: line 8: [[a: command not found
+condition is false
+ its showing false condition because 8th line brakets are close to near to dollar symbol so its showing false we have to check and correct it then execute
+ writtten again down line in correct manner
+ 
+ #! /bin/bash
+
+word=a
+
+if [[ $word  == "b" ]]
+then 
+    echo "condition is true"
+ elif [[ $word == "a" ]] 
+ then
+ echo "condition is true" 
+  else
+  echo "condition is false"
+  fi 
+  
+  rake@rake-VirtualBox:~/Desktop$ ./hello.sh
+condition is true
+
+ 
