@@ -1,0 +1,95 @@
+#! /bin/bash
+echo -e "enter the name of the file : \c"
+read file_name
+
+if [ -w $file_name ]
+then
+   echo "type some text data. to quit press ctrld+d."
+   cat >> $file_name 
+else
+   echo "the file do not have to write premission"
+fi
+  echo "$file_name not exists" 
+  fi
+	
+	
+	
+ rake@rake-VirtualBox:~/Desktop$ ./hello.sh
+enter the name of the file : demo
+typ some text data. to quit press ctrld+d.
+demo not exists
+./hello.sh: line 13: syntax error near unexpected token `fi'
+./hello.sh: line 13: `  fi'
+rake@rake-VirtualBox:~/Desktop$ ls -al
+total 24
+drwxr-xr-x  3 rake rake 4096 Dec 27 19:27 .
+drwxr-xr-x 18 rake rake 4096 Dec 25 17:22 ..
+-rw-rw-r--  1 rake rake    0 Dec 26 16:36 9
+drwxrwxr-x  2 rake rake 4096 Dec 27 18:14 aash
+-rw-rw-r--  1 rake rake   56 Dec 27 18:37 demo
+-rw-rw-r--  1 rake rake   55 Dec 17 20:46 file2
+-rwxrwxr-x  1 rake rake  267 Dec 27 19:54 hello.sh
+rake@rake-VirtualBox:~/Desktop$ chmod -w demo
+rake@rake-VirtualBox:~/Desktop$ ls -al
+total 24
+drwxr-xr-x  3 rake rake 4096 Dec 27 19:27 .
+drwxr-xr-x 18 rake rake 4096 Dec 25 17:22 ..
+-rw-rw-r--  1 rake rake    0 Dec 26 16:36 9
+drwxrwxr-x  2 rake rake 4096 Dec 27 18:14 aash
+-r--r--r--  1 rake rake   56 Dec 27 18:37 demo
+-rw-rw-r--  1 rake rake   55 Dec 17 20:46 file2
+-rwxrwxr-x  1 rake rake  267 Dec 27 19:54 hello.sh
+rake@rake-VirtualBox:~/Desktop$ ./hello.sh
+enter the name of the file : demo
+the file do not have to write premission
+demo not exists
+./hello.sh: line 13: syntax error near unexpected token `fi'
+./hello.sh: line 13: `  fi'
+rake@rake-VirtualBox:~/Desktop$ chmod +w demo
+rake@rake-VirtualBox:~/Desktop$ ls -al
+total 24
+drwxr-xr-x  3 rake rake 4096 Dec 27 19:27 .
+drwxr-xr-x 18 rake rake 4096 Dec 25 17:22 ..
+-rw-rw-r--  1 rake rake    0 Dec 26 16:36 9
+drwxrwxr-x  2 rake rake 4096 Dec 27 18:14 aash
+-rw-rw-r--  1 rake rake   56 Dec 27 18:37 demo
+-rw-rw-r--  1 rake rake   55 Dec 17 20:46 file2
+-rwxrwxr-x  1 rake rake  267 Dec 27 19:54 hello.sh
+rake@rake-VirtualBox:~/Desktop$ chmod +w demo
+rake@rake-VirtualBox:~/Desktop$ ls -al
+total 24
+drwxr-xr-x  3 rake rake 4096 Dec 27 19:27 .
+drwxr-xr-x 18 rake rake 4096 Dec 25 17:22 ..
+-rw-rw-r--  1 rake rake    0 Dec 26 16:36 9
+drwxrwxr-x  2 rake rake 4096 Dec 27 18:14 aash
+-rw-rw-r--  1 rake rake   56 Dec 27 18:37 demo
+-rw-rw-r--  1 rake rake   55 Dec 17 20:46 file2
+-rwxrwxr-x  1 rake rake  267 Dec 27 19:54 hello.sh
+rake@rake-VirtualBox:~/Desktop$ chmod +x demo
+rake@rake-VirtualBox:~/Desktop$ ls -al
+total 24
+drwxr-xr-x  3 rake rake 4096 Dec 27 19:27 .
+drwxr-xr-x 18 rake rake 4096 Dec 25 17:22 ..
+-rw-rw-r--  1 rake rake    0 Dec 26 16:36 9
+drwxrwxr-x  2 rake rake 4096 Dec 27 18:14 aash
+-rwxrwxr-x  1 rake rake   56 Dec 27 18:37 demo
+-rw-rw-r--  1 rake rake   55 Dec 17 20:46 file2
+-rwxrwxr-x  1 rake rake  267 Dec 27 19:54 hello.sh
+rake@rake-VirtualBox:~/Desktop$ ./hello.sh
+enter the name of the file : demo
+typ some text data. to quit press ctrld+d.
+shell scripting data
+demo not exists
+./hello.sh: line 13: syntax error near unexpected token `fi'
+./hello.sh: line 13: `  fi'
+rake@rake-VirtualBox:~/Desktop$ cat demo
+hai everyone how are you all practice makes man perfect
+shell scripting data
+rake@rake-VirtualBox:~/Desktop$ 
+
+
+
+(-w is use to remove the write permission we are unable to sentensce chmod -w demo click enter ls -al its show you r-r-r-- only read (we have to change it command chmod +w demo
+enter ls -al its shows you demo  in rw - rw- r now its read and write and ./hello.sh and  file name demo enter its show to write sentence  hai how are you to check it we have to
+use the cat > demo its you what you enter in demo file and to execute chmod +x to execute command 
+
