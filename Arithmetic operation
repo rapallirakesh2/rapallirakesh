@@ -1,0 +1,106 @@
++ , -  , * , / , %
+
+#! /bin/bash
+
+num1=21
+num2=5
+
+echo $(( num1 + num2 ))
+ ctrl+s in vc
+ 
+ 
+ rake@rake-VirtualBox:~/Desktop$  ./hello.sh
+25
+in terminal in addition +
+
+
+#! /bin/bash
+
+num1=20
+num2=5
+
+echo $(( num1 + num2 ))
+echo $(( num1 - num2 ))
+echo $(( num1 * num2 ))
+echo $(( num1 / num2 ))
+echo $(( num1 % num2 ))
+
+ctrl+s save in vc
+
+
+rake@rake-VirtualBox:~/Desktop$  ./hello.sh
+25
+15
+100
+4
+0
+ in terminal 
+ 
+ 
+ one more time changing the value 21
+ #! /bin/bash
+
+num1=21
+num2=5
+
+echo $(( num1 + num2 ))
+echo $(( num1 - num2 ))
+echo $(( num1 * num2 ))
+echo $(( num1 / num2 ))
+echo $(( num1 % num2 ))
+ 
+ ctrl=s save in vc 
+ 
+ 
+ rake@rake-VirtualBox:~/Desktop$ ./hello.sh
+26
+16
+105
+4
+1
+
+
+
+now we are using alternate way in integer expr using this
+#! /bin/bash
+
+num1=20
+num2=5
+
+echo $(expr $num1  +  $num2 )
+echo $(expr $num1  -  $num2 )
+echo $(expr $num1  *  $num2 )
+echo $(expr $num1  /   $num2 )
+echo $(expr $num1  %   $num2 )
+ctrl+s save in vc
+
+
+rake@rake-VirtualBox:~/Desktop$ ./hello.sh
+25
+15
+expr: syntax error: unexpected argument ‘9’
+
+4
+0
+in terminal there is one syntax error we have use /* this
+
+#! /bin/bash
+
+num1=20
+num2=5
+
+echo $(expr $num1  +  $num2 )
+echo $(expr $num1  -  $num2 )
+echo $(expr $num1  \*  $num2 )
+echo $(expr $num1  /   $num2 )
+echo $(expr $num1  %   $num2 )
+ctrl+s save in vc 
+
+
+rake@rake-VirtualBox:~/Desktop$ ./hello.sh
+25
+15
+100
+4
+0
+in terminal its shows right way now
