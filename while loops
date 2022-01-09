@@ -1,0 +1,110 @@
+#! /bin/bash
+# while loops
+n=1
+
+while [ $n -le 10 ]
+do 
+   echo "$n"
+   n=$(( n+1))
+ done  
+ ctrl+s
+ 
+ 
+ write in terminal now
+ rake@rake-VirtualBox:~/Desktop$ ./hello.sh
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+
+
+in vc just chaning the  n=$(( n+1)) to (( n++ )) or else you can (( ++n )) same you get
+#! /bin/bash
+# while loops
+n=1
+
+while [ $n -le 10 ]
+do 
+   echo "$n"
+   (( n++ ))
+ done  
+ ctrl+s
+ 
+ 
+ in terminal now
+ rake@rake-VirtualBox:~/Desktop$ ./hello.sh
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+
+
+
+using the sleep and open terminal with while loops  means it will entered one secound late  sleep1
+
+#! /bin/bash
+# while loops
+n=1
+
+while [ $n -le 10 ]
+do 
+   echo "$n"
+   (( n++ ))
+   sleep 1
+ done  
+ ctrl+s
+ 
+ 
+ in terminal now
+ rake@rake-VirtualBox:~/Desktop$ ./hello.sh
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+
+
+
+
+gnome-terminal it will open terminal
+#! /bin/bash
+# while loops
+n=1
+
+while [ $n -le 3 ]
+do 
+   echo "$n"
+   (( n++ ))
+   gnome-terminal &              or else you can write this      xterm &
+ done  
+ ctrl+s
+ 
+ 
+ now in terminal in this it will open three terminal  box ubuntu linux
+ rake@rake-VirtualBox:~/Desktop$ ./hello.sh
+1
+2
+3
+
+
+
