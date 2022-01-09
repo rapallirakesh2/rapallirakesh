@@ -1,0 +1,137 @@
+#! /bin/bash
+
+os=( 'ubuntu' 'window' 'kali')
+
+echo "${os[@]}"
+echo "${os[1]}"
+ctrl+s
+
+
+now write in terminal
+rake@rake-VirtualBox:~/Desktop$ ./hello.sh
+ubuntu window kali
+window
+
+
+#! /bin/bash
+
+os=( 'ubuntu' 'window' 'kali')
+
+echo "${os[@]}"
+echo "${os[0]}"
+ctrl+s
+
+now write in terminal
+rake@rake-VirtualBox:~/Desktop$ ./hello.sh
+ubuntu window kali
+ubuntu
+
+
+
+now write in vc
+#! /bin/bash
+
+os=( 'ubuntu' 'window' 'kali')
+
+echo "${os[@]}"
+echo "${os[0]}"
+echo "${!os[@]}"
+ctrl+s 
+
+
+now write in terminal
+#! /bin/bash
+
+os=( 'ubuntu' 'window' 'kali')
+
+echo "${os[@]}"
+echo "${os[0]}"
+echo "${!os[@]}"
+
+in vc now
+#! /bin/bash
+
+os=( 'ubuntu' 'window' 'kali')
+
+echo "${os[@]}"
+echo "${os[0]}"
+echo "${!os[@]}"
+echo "${#os[@]}"
+ctrl+s
+
+
+in terminal now
+rake@rake-VirtualBox:~/Desktop$ ./hello.sh
+ubuntu window kali
+ubuntu
+0 1 2
+3
+
+
+
+in vc now in this fourth element added
+#! /bin/bash
+
+os=( 'ubuntu' 'window' 'kali')
+os[3]='mac'
+echo "${os[@]}"
+echo "${os[0]}"
+echo "${!os[@]}"
+echo "${#os[@]}"
+ctrl+s
+
+
+in terminal
+rake@rake-VirtualBox:~/Desktop$ ./hello.sh
+ubuntu window kali mac
+ubuntu
+0 1 2 3
+4
+
+
+
+ in vc now chaning the value 
+ #! /bin/bash
+
+os=( 'ubuntu' 'window' 'kali')
+os[0]='mac'
+echo "${os[@]}"
+echo "${os[0]}"
+echo "${!os[@]}"
+echo "${#os[@]}"
+ctrl+s
+
+
+in terminal now
+rake@rake-VirtualBox:~/Desktop$ ./hello.sh
+mac window kali
+mac
+0 1 2
+3
+
+
+
+in vc now
+#! /bin/bash
+
+os=( 'ubuntu' 'window' 'kali')
+os[3]='mac'
+
+unset os[2]
+echo "${os[@]}"
+echo "${os[0]}"
+echo "${!os[@]}"
+echo "${#os[@]}"
+ctrl+s
+
+
+in terminal now
+rake@rake-VirtualBox:~/Desktop$ ./hello.sh
+ubuntu window mac
+ubuntu
+0 1 3
+3
+
+
+
+
