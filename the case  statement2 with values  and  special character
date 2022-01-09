@@ -1,0 +1,38 @@
+in vc now with values and special characters
+#! /bin/bash
+
+echo -e "Enter some character  : \c"
+read value
+
+case $value in
+    [a-z] )
+        echo "user entered $value a to z"  ;;
+     [A-Z] )
+       echo "user entered  $value A TO Z"  ;;
+       [0-9] )
+        echo "user entered $value 0 to 9"   ;;
+        ?  )
+        echo "user entered  $value special character"  ;;
+       *  )
+       echo "unknon input"  ;;
+esac
+ctrl+s
+
+in terminal 
+rake@rake-VirtualBox:~/Desktop$ ./hello.sh
+Enter some character  : f
+user entered f a to z
+rake@rake-VirtualBox:~/Desktop$ K
+K: command not found
+rake@rake-VirtualBox:~/Desktop$ ./hello.sh
+Enter some character  : K
+user entered  K A TO Z
+rake@rake-VirtualBox:~/Desktop$ ./hello.sh
+Enter some character  : 6
+user entered 6 0 to 9
+rake@rake-VirtualBox:~/Desktop$ ./hello.sh
+Enter some character  : &
+user entered  & special character
+rake@rake-VirtualBox:~/Desktop$ ./hello.sh
+Enter some character  : (
+user entered  ( special character
