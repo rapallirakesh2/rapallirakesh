@@ -1,0 +1,31 @@
+write in vc  its case statement
+#! /bin/bash
+
+vehicle=$1
+
+case $vehicle in
+    "car" )
+        echo "rent of $vehicle is 3000 rupees"  ;;
+     "van" )
+       echo "rent of $vehicle is  2500 rupees"  ;;
+       "bicycle" )
+        echo "rent of $vehicle is 100 rupees" ;;
+        "truck"  )
+        echo "rent of $vehicle is 3500 rupees"  ;;
+       *  )
+       echo "unknown vehicle"  ;;
+esac
+ctrl+s
+
+
+in terminal
+rake@rake-VirtualBox:~/Desktop$ ./hello.sh
+unknown vehicle
+rake@rake-VirtualBox:~/Desktop$ ./hello.sh car
+rent of car is 3000 rupees
+rake@rake-VirtualBox:~/Desktop$ ./hello.sh van
+rent of van is  2500 rupees
+rake@rake-VirtualBox:~/Desktop$ ./hello.sh bicycle
+rent of bicycle is 100 rupees
+rake@rake-VirtualBox:~/Desktop$ ./hello.sh truck
+rent of truck is 3500 rupees
