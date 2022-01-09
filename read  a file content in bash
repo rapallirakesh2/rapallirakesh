@@ -1,0 +1,19 @@
+in vc what we written in vc its ashow same in terminal as same 
+#! /bin/bash
+# while loops
+
+while read p
+do 
+   echo $p
+ done  < hello.sh
+ ctrl+s
+ 
+ 
+ now in terminals
+ rake@rake-VirtualBox:~/Desktop$ ./hello.sh
+#! /bin/bash
+# while loops
+
+while read p
+do
+echo $p
