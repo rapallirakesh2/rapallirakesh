@@ -1,0 +1,64 @@
+in vc it will show you all your home directory 
+#! /bin/bash
+# for loops
+for command in ls pwd date
+do
+  echo "--------------$command---------------------" 
+  $command
+ done 
+ ctrl+s
+ 
+ in terminal now
+ rake@rake-VirtualBox:~/Desktop$ ./hello.sh
+--------------ls---------------------
+9  aash  demo  file2  hello.sh
+--------------pwd---------------------
+/home/rake/Desktop
+--------------date---------------------
+Sunday 09 January 2022 08:05:23 PM IST
+
+
+
+
+in vc now with -d it will you all current directory
+#! /bin/bash
+# for loops
+for item in *
+do
+  if [ -d $item ]
+  then
+     echo $item 
+    fi
+ done 
+ ctrl+s
+ 
+ 
+ in terminal now it will you directory now
+ rake@rake-VirtualBox:~/Desktop$ ./hello.sh
+aash
+
+
+
+
+now in vc -f  it will you all current files 
+#! /bin/bash
+# for loops
+for item in *
+do
+  if [ -f $item ]
+  then
+     echo $item 
+    fi
+ done 
+ ctrl+s
+ 
+ 
+ now in terminal
+ rake@rake-VirtualBox:~/Desktop$ ./hello.sh
+9
+demo
+file2
+hello.sh
+
+
+ 
