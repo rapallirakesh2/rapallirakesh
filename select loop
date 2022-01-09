@@ -1,0 +1,66 @@
+in vc it will show what you execute in terminal #?3 click enter it show you name #?1 it will show you name 
+#! /bin/bash
+# for loops
+
+select name in sai sri mark  ben 
+do
+   echo "$name selected"
+ done 
+ ctrl+s 
+ 
+ in terminalnow
+ rake@rake-VirtualBox:~/Desktop$ ./hello.sh
+1) sai
+2) sri
+3) mark
+4) ben
+#? 2
+sri selected
+#? 1
+sai selected
+#? 
+
+
+
+
+in vc now 
+#! /bin/bash
+# for loops
+
+select name in mark john tom ben
+do 
+   case $name in 
+   mark)
+      echo mark selected
+   ;;
+   john)
+      echo john selected 
+   ;;
+   tom)
+      echo tom selected
+    ;;
+    ben)
+       echo ben selected
+   ;; 
+   *)
+     echo "erroe please provide the no. between 1..4"
+     esac          
+ done 
+ ctrl+s 
+ 
+ 
+ in terminal now
+ rake@rake-VirtualBox:~/Desktop$ ./hello.sh
+1) mark
+2) john
+3) tom
+4) ben
+#? 4
+ben selected
+#? 1
+mark selected
+#? 2
+john selected
+#? 3
+tom selected
+#? 
