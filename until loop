@@ -1,0 +1,84 @@
+in vc
+#! /bin/bash
+# until loops
+n=1
+
+until [ $n -ge 10 ]
+do 
+   echo $n
+    n=$(( n+1 ))
+ done  
+ ctrl+s
+ 
+ 
+ in terminal now
+ rake@rake-VirtualBox:~/Desktop$ ./hello.sh
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+
+now in vc 
+#! /bin/bash
+# until loops
+n=1
+
+until [ $n -gt 10 ]
+do 
+   echo $n
+    n=$(( n+1 ))
+ done  
+ ctrl+s
+ 
+ in terminal now
+ rake@rake-VirtualBox:~/Desktop$ ./hello.sh
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+ 
+ 
+ in vc now
+ #! /bin/bash
+# until loops
+n=1
+
+until (( $n > 10 ))
+do 
+   echo $n
+    n=$(( n+1 ))
+ done  
+ ctrl+s
+ 
+ 
+ now in terminal
+ rake@rake-VirtualBox:~/Desktop$ ./hello.sh
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+
+
+
+
