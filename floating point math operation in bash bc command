@@ -1,0 +1,78 @@
+its decimal to calculate example 20.5
+
+write in visual code
+#! /bin/bash
+
+num1=20.5
+num2=5
+
+
+echo "20.5+5"  | bc
+now ctrl+s
+
+in terminal 
+for decimal bc command has to use 
+rake@rake-VirtualBox:~/Desktop$ man bc
+rake@rake-VirtualBox:~/Desktop$ ./hello.sh
+25.5
+
+
+
+write in vc 
+#! /bin/bash
+
+num1=20.5
+num2=5
+
+
+echo "20.5+5"  | bc
+echo "20.5-5"  | bc
+echo "20.5*5"  | bc
+echo "scale=2;20.5/5"  | bc
+echo "20.5%5"  | bc
+ctrl+s
+
+
+in terminal 
+rake@rake-VirtualBox:~/Desktop$ ./hello.sh
+25.5
+15.5
+102.5
+4.10
+.5
+
+
+write in vc now down its square root we are using sqrt
+
+num=27
+
+echo "scale=2;sqrt($num)" |bc -l
+ctrl+s
+
+
+write in terminal now
+rake@rake-VirtualBox:~/Desktop$ ./hello.sh
+5.19
+
+
+write in vc now square root we use sqrt
+
+num=4
+
+echo "scale=2;sqrt($num)" |bc -l
+ctrl+s
+
+now write in terminal
+rake@rake-VirtualBox:~/Desktop$ ./hello.sh
+2.00
+
+
+now write in power of power means
+#! /bin/bash
+echo "scale=2;3^3" | bc -l
+ctrl+s
+
+
+now in terminal
+rake@rake-VirtualBox:~/Desktop$ ./hello.sh
+27
