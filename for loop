@@ -1,0 +1,122 @@
+in vc 
+#! /bin/bash
+# for loops
+
+
+for i in 1 2 3 4 5
+do 
+   echo $i 
+ done  
+ ctrl+s
+ 
+ 
+ in terminals
+ rake@rake-VirtualBox:~/Desktop$ ./hello.sh
+1
+2
+3
+4
+5
+
+
+
+in vc now 
+#! /bin/bash
+# for loops
+
+
+for i in {1..10}
+do 
+   echo $i 
+ done  
+ ctrl+s
+ 
+ 
+ in terminal now
+ rake@rake-VirtualBox:~/Desktop$ ./hello.sh
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+
+
+in vc now in this one one gap bewteen the numbers
+#! /bin/bash
+# for loops
+
+
+for i in {1..10..2}
+do 
+   echo $i 
+ done  
+ ctrl+s
+ 
+ in terminal now
+ rake@rake-VirtualBox:~/Desktop$ ./hello.sh
+1
+3
+5
+7
+9
+
+
+
+in vc now
+#! /bin/bash
+# for loops
+echo ${BASH_VERSION}
+for i in {0..10..2}
+do 
+   echo $i 
+ done  
+ ctrl+s 
+ 
+ 
+ in terminal now and it will shows you bash verision also
+ rake@rake-VirtualBox:~/Desktop$ ./hello.sh
+5.0.17(1)-release
+0
+2
+4
+6
+8
+10
+
+
+
+
+now in vc 
+#! /bin/bash
+# for loops
+echo ${BASH_VERSION}
+for (( i=0; i<5; i++ ))
+do 
+   echo $i 
+ done  
+ ctrl+s
+ 
+ 
+ now in terminal
+ rake@rake-VirtualBox:~/Desktop$ ./hello.sh
+5.0.17(1)-release
+0
+1
+2
+3
+4
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
