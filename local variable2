@@ -1,0 +1,75 @@
+in vc now
+#! /bin/bash
+
+function print(){
+      name=$1
+      echo "the name is $name"
+}
+
+print Ram
+
+
+echo "foo"
+ctrl+s
+
+
+in terminal now
+rake@rake-VirtualBox:~/Desktop$ ./hello.sh
+the name is Ram
+foo
+
+
+
+
+in vc now
+#! /bin/bash
+
+function print(){
+      name=$1
+      echo "the name is $name"
+}
+
+name="joy"
+
+echo "the name is $name"
+
+print Ram 
+
+
+echo "foo"
+ctrl+s 
+
+
+in terminal now
+rake@rake-VirtualBox:~/Desktop$ ./hello.sh
+the name is joy
+the name is Ram
+foo
+
+
+
+in vc now
+#! /bin/bash
+
+function print(){
+      name=$1
+      echo "the name is $name"
+}
+
+name="joy"
+
+echo "the name is $name : Before"
+
+print Ram 
+
+
+echo "The name is $name : After"
+ctrl+s
+
+
+
+in terminal now
+rake@rake-VirtualBox:~/Desktop$ ./hello.sh
+the name is joy : Before
+the name is Ram
+The name is Ram : After
