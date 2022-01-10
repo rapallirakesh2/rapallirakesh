@@ -1,0 +1,59 @@
+in vc now
+#! /bin/bash
+
+var=31
+
+readonly var
+
+var=50
+ctrl+s
+
+
+in terminal
+rake@rake-VirtualBox:~/Desktop$ ./hello.sh
+./hello.sh: line 7: var: readonly variable
+
+
+in vc now
+#! /bin/bash
+
+var=31
+
+readonly var
+
+var=50
+
+echo "var => $var"
+ctrl+s
+
+
+in terminal now
+rake@rake-VirtualBox:~/Desktop$ ./hello.sh
+./hello.sh: line 7: var: readonly variable
+var => 31
+
+
+
+in vc now
+#! /bin/bash
+
+var=31
+
+readonly var
+
+var=50
+
+echo "var => $var"
+
+hello() {
+   echo "Hello world"   
+}
+
+ctrl+s
+
+
+in terminal now
+rake@rake-VirtualBox:~/Desktop$ ./hello.sh
+./hello.sh: line 7: var: readonly variable
+var => 31
+Hello world  
