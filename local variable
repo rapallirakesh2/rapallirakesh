@@ -1,0 +1,78 @@
+in vc now 
+#! /bin/bash
+
+function Hello(){
+      echo "Hello"
+}
+
+ quit ()  {
+   exit
+ }
+
+ Hello  
+ ctrl+s
+ 
+ 
+ in terminal now
+ rake@rake-VirtualBox:~/Desktop$ ./hello.sh
+Hello
+
+
+
+
+
+in vc now
+#! /bin/bash
+
+function Hello(){
+      echo "Hello"
+}
+
+ quit ()  {
+   exit
+ }
+
+ Hello   
+
+
+  echo "world"
+   quit   
+   ctrl+s 
+   
+   
+   in terminal now
+   rake@rake-VirtualBox:~/Desktop$ ./hello.sh
+Hello
+world
+
+
+
+
+
+in vc now
+#! /bin/bash
+
+function print(){
+      echo $1
+}
+
+ quit ()  {
+   exit
+ }
+
+ print Hello   
+ print world
+ print again 
+
+  echo "hai"
+   quit   
+   ctrl+s 
+   
+   
+   
+   in terminal now
+  rake@rake-VirtualBox:~/Desktop$ ./hello.sh
+Hello
+world
+again
+hai
